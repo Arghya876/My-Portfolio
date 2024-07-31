@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8dcb7f32.css",
+    "main.js": "/static/js/main.b88a62a4.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/manage_db.png": "/static/media/manage_db.41173b98d3ee30fc0efb.png",
+    "static/media/miss_minutes.png": "/static/media/miss_minutes.b25baadb2cf5e3ebea94.png",
+    "static/media/login_py.png": "/static/media/login_py.733ad149bcf4c3962799.png",
+    "static/media/chess.png": "/static/media/chess.78d29cb60a38be5ff8f8.png",
+    "static/media/Arghya CV.pdf": "/static/media/Arghya CV.f4575a9fa0b81ad71a00.pdf",
+    "static/media/student_manage_py.png": "/static/media/student_manage_py.dae89ff30047dc56529f.png",
+    "static/media/profile_pic.jpeg": "/static/media/profile_pic.fb5316dc968b4fd4111d.jpeg",
+    "static/media/laptop_pic.jpeg": "/static/media/laptop_pic.d1e3db304421c848268e.jpeg",
+    "index.html": "/index.html",
+    "main.8dcb7f32.css.map": "/static/css/main.8dcb7f32.css.map",
+    "main.b88a62a4.js.map": "/static/js/main.b88a62a4.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8dcb7f32.css",
+    "static/js/main.b88a62a4.js"
+  ]
+}
