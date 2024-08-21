@@ -1,0 +1,123 @@
+.containerAbout{
+    position: relative;
+    background-color: #15002f85; 
+    width: 100%;
+    height: auto;
+    padding: 5rem 5rem;
+    padding-bottom: 7rem;
+    color: aliceblue;
+}
+.leftAbout{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 5rem;
+}
+.aboutProfileContain{
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+.leftAboutMe{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.aboutProfile{
+    width: 300px;
+    border-radius: 50%;
+    border: 4px solid aliceblue;
+    box-shadow: 0px 2px 10px 2px rgba(12, 12, 12, 0.727);
+}
+.leftAboutHead{
+    font-size: 40px;
+}
+.textLeftAbout{
+    font-size: 22px;
+}
+
+.rightAbout{
+    width: 100%;
+}
+.rightAboutBody{
+    padding: 1rem;
+    background-color: rgba(24, 14, 40, 0.716);
+    border-radius: 10px;
+}
+.rightAboutMySkils{
+    background: linear-gradient(90deg, rgba(50, 156, 255, 0.562) 0%, rgba(0, 12, 72, 0.105) 100%);
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2.5rem;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 1s;
+    cursor: pointer;
+}
+.rightAboutMySkils:hover{
+    background-size: 100% 100%;
+}
+.rightAboutSkillHead{
+    margin-bottom: .5rem;
+}
+.buttonAbout{
+    display: flex;
+    justify-content: center;
+}
+li{
+    margin-bottom: 5px;
+}
+@media screen and (max-width:1260px){
+    .aboutProfile{
+        width: 250px;
+    }
+    .leftAbout{
+        flex-direction: column;
+    }
+    .aboutProfileContain{
+        margin-bottom: 15px;
+    }
+    .leftAboutHead{
+        font-size: 30px;
+    }
+    .leftAboutMe{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1138px){
+    .containerAbout{
+        padding: 6rem 3.5rem;
+    }
+    .aboutProfile{
+        width: 200px;
+    }
+    .leftAboutHead{
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+    .textLeftAbout{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:1000px){
+    .leftAboutHead{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width:710px){
+    .leftAbout{
+        margin-bottom: 2rem;
+    }
+    .aboutProfileContain{
+        margin-bottom: 35px;
+    }
+    .aboutProfile{
+        width: 170px;
+    }
+    .containerAbout{
+        padding: 4rem 1.5rem;
+    }
+}

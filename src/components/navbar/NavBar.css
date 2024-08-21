@@ -1,0 +1,130 @@
+.navigationBar {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoStyle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 31px;
+}
+.leftPart {
+    display: flex;
+    align-items: center;
+}
+.manuTitel, hr {
+    display: none;
+    color: aliceblue;
+}
+.hamManu {
+    display: none;
+    color: aliceblue;
+    font-size: 18px;
+}
+.menuItems{
+    display: flex;
+    list-style: none;
+}
+.a_c {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    margin-left: 40px;
+    color: rgba(240, 248, 255, 0.822);
+    font-size: 20px;
+}
+.a_c::after {
+    content: "";
+    margin-top: 5px;
+    position: absolute;
+    width: 100%;
+    height: 0.065rem;
+    left: 0;
+    bottom: 0;
+    background-color: #00FFE0;
+}
+.a_c::after {
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+.a_c:hover::after {
+    transform: scale(1, 1);
+}
+.a_c:hover {
+    color: rgb(0, 255, 224);
+}
+
+@media screen and (max-width:1115px) {
+    
+    .hamManu{
+        display: block;
+        cursor: pointer;
+        font-size: 21px;
+    }
+    .manuTitel, hr {
+        width: 100%;
+        display: block;
+    }
+    .manuTitel{
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 205px;
+        background: linear-gradient(0deg, rgba(20, 40, 78, 0.386) 0%, rgb(44, 102, 202) 100%);
+        border-radius: 7px;
+        padding: 24px 10px;
+        position: absolute;
+        top: 3.5rem;
+        right: 0px;
+        z-index: 10;
+        box-shadow:  8px -8px 10px 0px rgba(28, 28, 28, 0.288);
+        transition: all 1s ease;
+    }
+    .menu.active{
+        right: -500px;
+        transition: all 1s ease;
+    }
+    .menuItems{
+        flex-direction: column;
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .manuItem {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        height: 30px;
+        width: 100%;
+     }
+     .manuItem:hover{
+         background-color: rgba(240, 248, 255, 0.266);
+         border-radius: 4px;
+    }
+    .a_c{
+        cursor: pointer;
+        margin-left: 0px;
+        font-size: 18px;
+    }
+    .a_c::after{
+        background-color: transparent;
+    }
+    .a_c:hover {
+        color: aliceblue;
+    } 
+     
+}
+@media screen and (max-width:515px){
+    .menu{
+        top: 3.7rem;
+    }
+}

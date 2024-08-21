@@ -1,0 +1,119 @@
+.containerContact {
+  background-color: #15002fd7;
+  width: 100%;
+  height: auto;
+  padding: 3rem 5rem;
+  color: aliceblue;
+}
+
+.contactHead {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contactBody{
+    display: flex;
+    width: 100%;
+}
+.contactBodyLeft{
+    width: 50%;
+}
+.contactBodyLeftTilet{
+    margin-bottom: 10px;
+}
+.mainContactImgContainer{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+.contactImg{
+    width: 50px;
+    margin-right: 40px;
+    transition: .5s;
+    border-radius: 50%;
+}
+.contactImg:hover{
+    box-shadow: 0px 0px 15px rgb(0, 255, 224);
+    transform: scale(1.30);
+    transition: .5s;
+}
+.contactBodyRight{
+    width: 50%;
+    margin-left: 50px;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+label{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+input, textarea{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgba(103, 89, 131, 0.91);
+    font-size: 15px;
+    font-weight: 500;
+    color: aliceblue;
+}
+input::placeholder{
+    color: rgb(176, 183, 189);
+}
+textarea::placeholder{
+    color: rgb(176, 183, 189);
+}
+button{
+    margin-top: 40px;
+    align-self: center;
+}
+
+@media screen and (max-width:1080px){
+    .contactBody{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .contactBodyRight{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 4.5rem;
+    }
+    .contactBodyLeft{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .mainContactImgContainer{
+        justify-content: center;
+    }
+    .contactImg{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width:940px){
+    .containerContact {
+        padding: 3rem 2rem;
+    }
+}
+@media screen and (max-width:750px){
+    .containerContact {
+        padding: 3rem 2rem;
+    }.containerContact {
+        padding: 3rem 1.6rem;
+    }
+    .contactHead {
+        font-size: 25px;
+    }
+    .contactSubmit{
+        margin-top: 25px;
+    }
+    .contactImg{
+        width: 40px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}

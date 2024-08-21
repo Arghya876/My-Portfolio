@@ -1,0 +1,12 @@
+.appStyle{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.mainHome{
+  background: linear-gradient(135deg, #02022f, #18075a, #4f6aff, #18075a,#02022f); 
+}
+.mainAbout, .mainServices, .mainSkills, .mainProjects, .mainContact, .mainFooter{
+  background: linear-gradient(135deg, #02022f, #18075a, #4f6aff, #18075a,#02022f);  
+}

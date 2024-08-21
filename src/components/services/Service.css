@@ -1,0 +1,161 @@
+.containerService {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #15002fd7;
+  width: 100%;
+  height: auto;
+  padding: 3rem 5rem;
+  color: aliceblue;
+}
+
+.serviceHead {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.serviceBody {
+  position: relative;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;
+  row-gap: 60px;
+  margin-bottom: 50px;
+}
+
+.services {
+  background: linear-gradient(180deg, rgba(50, 156, 255, 0.562), #0e0450f9);
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: space-around;
+  width: 23rem;
+  height: 15rem;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 1px solid rgb(183, 255, 247);
+  transition: 0.5s;
+}
+
+.services:hover {
+  box-shadow: 0px 0px 15px rgb(0, 255, 224);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.serviceReadMore {
+  cursor: pointer;
+  display: contents;
+}
+
+.serviceReadMore:hover {
+  color: rgb(0, 255, 225);
+}
+
+.readMoreServices {
+  background-color: rgb(24, 14, 40);
+  position: absolute;
+  width: 700px;
+  height: 440px;
+  border-radius: 10px;
+  justify-self: center;
+  padding: 1.5rem 2rem;
+  box-shadow: 0px 0px 15px rgba(14, 8, 32, 0.825);
+  display: none;
+}
+
+.readMoreServices.active {
+  display: block;
+}
+
+.fa-xmark {
+  font-size: 25px;
+  float: right;
+  cursor: pointer;
+}
+
+.readMoreServicesHeading {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  text-align: center;
+}
+
+@media screen and (max-width:1342px){
+  .serviceBody {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width:990px){
+  .containerService {
+    padding: 3rem 3rem;
+  }
+  .serviceBody {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 25px;
+  }
+  .services {
+    width: 28rem;
+    height: 17rem;
+  }
+}
+
+@media screen and (max-width:833px){
+  .serviceHead {
+    font-size: 25px;
+  }
+  .services {
+    width: 24rem;
+    height: 15rem;
+  }
+  .readMoreServices {
+    width: 600px;
+    height: 440px;
+  }
+}
+@media screen and (max-width:695px){
+  .containerService {
+    padding: 3rem 1.6rem;
+  }
+  .services {
+    width: 22rem;
+    height: 15rem;
+  }
+  .readMoreServices {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media screen and (max-width:580px){
+  .readMoreServices {
+    width: 400px;
+    height: 600px;
+  }
+}
+@media screen and (max-width:480px){
+  .readMoreServices {
+    width: 350px;
+    height: 650px;
+  }
+}
+@media screen and (max-width: 410px){
+  .containerService {
+    padding: 3rem 1rem;
+  }
+  .services {
+    width: 20rem;
+    height: 16rem;
+  }
+  .readMoreServices {
+    width: 320px;
+    height: 720px;
+  }
+}

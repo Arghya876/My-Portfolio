@@ -1,0 +1,19 @@
+.footer {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px 5rem;
+  margin-top: 0.5px;
+  background-color: #15002ff1;
+  color: aliceblue;
+}
+.copyText{
+    margin-bottom: 12px;
+}
+@media screen and (max-width:750px){
+    .footer {
+        padding: 0px 2rem;
+    }
+}
